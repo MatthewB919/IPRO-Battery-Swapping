@@ -2,20 +2,24 @@
 <html lang="en" >
   <head>
     <meta charset="utf-8" />
-    <title>ShockSwap+</title>
+    <title>{% block title %}ShockSwap+
+        <nav id="navigation">
+            <ul>
+              <li><a href= "../">Home</a></li>
+            </ul>
+            </nav>
+        {% endblock %}
+    </title>
   </head>
   <body>
     <header id="header">
-      <h1> </h1>
-      <nav id="navigation">
-      <ul>
-        <li><a href= "../">Home</a></li>
-      </ul>
-      </nav>
+      <h1>{% block header %}Controls{% endblock %}</h1>
     </header>
     <main id= "Control">
+        {% block content %} 
         <input type="submit" name="submit_button" value="Release">
         <input type="submit" name="submit_button" value="Emergency button">
+        {% block content %} 
     </main>
     <footer id="footer">
       <p> Site content of team ShockSwap.</p>
