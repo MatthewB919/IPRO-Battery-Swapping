@@ -1,6 +1,6 @@
-from flask import Flask
+from flask import Flask, redirect, url_for, request
 
-app= flask.flask(__index.html__) 
+app= Flask(__index.html__) 
 /home
 
 
