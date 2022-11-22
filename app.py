@@ -1,11 +1,9 @@
 from flask import Flask, redirect, url_for, request
 
-app= Flask(__index.html__) 
-/home
+app= Flask(__name__) 
 
 
-
-        def contact():
+    def contact():
 if request.method == 'POST':
     if request.form['submit_button'] == 'Release':
         pass # do something
